@@ -11,7 +11,7 @@ from .models import Enlace
 class CrearAcortador(CreateView):
     model = Enlace
     form_class = AcortadorForm
-    template_name = "inicio.html"
+    template_name = "index.html"
 
     def get_context_data(self, **kwargs):
         contexto = super().get_context_data(**kwargs)
